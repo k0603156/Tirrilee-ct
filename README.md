@@ -19,5 +19,5 @@
 
   - [ ] 모달 보이는 중에 뒷부분 스크롤 비활성화.미완성.
 
-- 구조는 앞으로 조금 더 고민해봐야겠다
-  <img width="100%" src="https://github.com/k0603156/Tirrilee-ct/blob/master/ERD.jpg/raw=true">
+- 구조는 앞으로 조금 더 고민해봐야겠다.
+  <img width="100%" src="https://github.com/k0603156/Tirrilee-ct/blob/master/ERD.jpg">
