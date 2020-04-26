@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 모바일에서의 관리자용 앱인 것 같다.
+- 모바일에서의 사용으로 보고 먼저 새로고침에서 상태가 날아갈 상황은 일단 예외로 두고 하기로 했다.
 
-## Available Scripts
+- 1.1달력이 보여지는 방식은 단순하게 이번달 +3달 정도면 충분할 듯 하다. 미완성.
 
-In the project directory, you can run:
+- 2.2의 팝업은 모달이아닌 하단에서 올라오는 형태를 뜻하는 것으로 보고 작업.
 
-### `yarn start`
+  - 팝업이 올라올 때 캘린더의 형태를 변경 하는 부분은 미완성.
+  - 예약 불가 날짜가 연속된 경우 이어진 하나의 타원으로 표시. 미완성.
+  - 팝업시 달력은 고정이 고정이 될 것 처럼 보인다. 미완성.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 수정요청시 여러 날짜가 선택 된 경우 해당 장소의 해당 일 설정을 모두 덮어쓰는게 될 듯 하다.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- 3.3의 회색은 아마도 최초의 상태 같은데 5개의 날짜모두 예약이 막혀있다는 보장은 없으니 아마 5일중 하루라도 막혀있으면 회색 표시가 나타나는 것이 맞는 듯 하다. 미완성.
 
-### `yarn test`
+  - 그렇다면 3.3으로 넘어가면서 해당장소에서 해당 5일의 예약 가능여부를 받아와야 한다.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 3.4 모달에서 수정완료를 누를 경우에 임시저장->모달이 닫히고 3.3으로 -> 완료를 누르면 모든 데이터를 한번에 수정요청하는 것이 좋을지 아니면 모달에서 수정완료를 누르면 해당 {해당장소,해당날짜,예약타임}의 시간범위와 요금만 수정하고 3.3으로 돌아오는게 맞을지. 미완성.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - 모달 보이는 중에 뒷부분 스크롤 비활성화.미완성.
